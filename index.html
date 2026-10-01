@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DEVFIX - Error Solver</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">&lt;/&gt;</span>
+            DEVFIX
+        </div>
+
+        <span class="tagline">Smart Error Understanding Tool</span>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <span class="eyebrow">YOUR CODING COMPANION</span>
+
+            <h1>
+                The Challenge:
+                <span>DEVFIX</span>
+            </h1>
+
+            <p class="quote">
+                "Turn coding errors into understandable solutions."
+            </p>
+
+            <p class="description">
+                Developers frequently encounter errors they don't
+                immediately understand. DEVFIX helps you identify,
+                understand, and resolve common programming errors.
+            </p>
+        </section>
+
+        <div class="problem-statement">
+            <strong>Problem Statement:</strong>
+            Build a simple web-based tool that helps a developer
+            understand programming errors and find solutions.
+        </div>
+
+        <section class="workspace">
+
+            <!-- STEP 1 -->
+
+            <div class="panel">
+
+                <div class="step-heading">
+                    <span class="step-number">1</span>
+                    <h2>Enter an error</h2>
+                </div>
+
+                <div class="terminal">
+
+                    <div class="terminal-header">
+                        <div class="dots">
+                            <span class="red"></span>
+                            <span class="yellow"></span>
+                            <span class="green"></span>
+                        </div>
+                        <span>error-input.txt</span>
+                    </div>
+
+                    <textarea
+                        id="errorInput"
+                        placeholder="Select an error below or type your error here..."
+                    ></textarea>
+
+                </div>
+
+                <label for="errorSelect" class="field-label">
+                    Or choose a predefined error:
+                </label>
+
+                <select id="errorSelect">
+                    <option value="">Select an error</option>
+                </select>
+
+            </div>
+
+
+            <!-- STEP 2 -->
+
+            <div class="panel">
+
+                <div class="step-heading">
+                    <span class="step-number">2</span>
+                    <h2>Select a programming language</h2>
+                </div>
+
+                <div class="terminal">
+
+                    <div class="terminal-header">
+                        <div class="dots">
+                            <span class="red"></span>
+                            <span class="yellow"></span>
+                            <span class="green"></span>
+                        </div>
+                        <span>language-selector</span>
+                    </div>
+
+                    <select id="languageSelect">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                    </select>
+
+                </div>
+
+                <button id="solveBtn" class="solve-button">
+                    <span>Analyze Error</span>
+                    <span>→</span>
+                </button>
+
+                <p class="hint">
+                    Choose a language and select an error to begin.
+                </p>
+
+            </div>
+
+
+            <!-- STEP 3 -->
+
+            <div class="panel result-panel">
+
+                <div class="step-heading">
+                    <span class="step-number">3</span>
+                    <h2>Understand the problem</h2>
+                </div>
+
+                <div id="explanation" class="result-content">
+
+                    <div class="empty-state">
+                        <span class="empty-icon">?</span>
+                        <p>
+                            Your error explanation will appear here.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 4 -->
+
+            <div class="panel result-panel">
+
+                <div class="step-heading">
+                    <span class="step-number">4</span>
+                    <h2>Provide a suggested solution</h2>
+                </div>
+
+                <div id="solution" class="result-content">
+
+                    <div class="empty-state">
+                        <span class="empty-icon">✓</span>
+                        <p>
+                            The suggested solution will appear here.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>DEVFIX | Built with HTML, CSS & JavaScript</p>
+            <p>Learn from errors. Improve your coding.</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
